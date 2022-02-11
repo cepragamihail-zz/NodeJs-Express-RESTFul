@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-express-restful",
+  "version": "1.0.0",
+  "description": "RESTful Web Services with Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cepragamihail/NodeJs-Express-RESTFul.git"
+  },
+  "keywords": [
+    "javaScript",
+    "nodejs",
+    "express"
+  ],
+  "author": "Cepraga Mihail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cepragamihail/NodeJs-Express-RESTFul/issues"
+  },
+  "homepage": "https://github.com/cepragamihail/NodeJs-Express-RESTFul#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
