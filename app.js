@@ -1,14 +1,20 @@
 const express = require('express');
-
+const mongoose = require('mongoose');
 const app = express();
+const db = mongoose.connect(
+  'mongodb://username:password@localhost:27017/bookAPI?authSource=admin&readPreference=primary&ssl=false'
+);
 const bookRouter = express.Router();
 const port = process.env.PORT || 3000;
-
-bookRouter.route('/books')
-  .get((req, res) => {
-    const response = {hello: 'This is my API'};
-    res.json(response);
+const Book = require('./models/bookModel');
+bookRouter.route('/books').get((req, res) => {
+  Book.find((err, books) => {
+    if (err) {
+      return res.send(err);
+    }
+    return res.json(books);
   });
+});
 app.use('/api', bookRouter);
 
 app.get('/', (req, res) => {

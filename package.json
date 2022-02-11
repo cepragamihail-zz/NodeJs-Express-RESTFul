@@ -25,6 +25,7 @@
   "homepage": "https://github.com/cepragamihail/NodeJs-Express-RESTFul#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "mongoose": "^6.2.1",
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
