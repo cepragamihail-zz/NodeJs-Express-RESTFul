@@ -1,10 +1,11 @@
-const should = require('should');
+require('should');
 const sinon = require('sinon');
 const bookController = require('../controllers/booksController');
 
 describe('Book Controller Tests:', () => {
   describe('Post', () => {
     it('should not allow an empty title on post', () => {
+      // eslint-disable-next-line no-unused-vars
       const Book = function (book) { this.save = () => {}};
       const req = {
         body: {
